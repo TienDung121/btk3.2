@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initializeGallery()">
+
+  <header>
+    <h1>Thư viện ảnh tương tác</h1>
+  </header>
+
+  <main>
+    <div id="image">Di chuột qua một hình ảnh bên dưới để hiển thị ở đây.</div>
+
+    <div class="gallery">
+      <img class="preview" alt="Cây cầu bắc qua sông trong sương sớm" 
+           src="https://picsum.photos/id/1018/600/400" 
+           onmouseover="upDate(this)" onmouseleave="unDo()" 
+           onfocus="upDate(this)" onblur="unDo()">
+
+      <img class="preview" alt="Bờ biển xanh biếc và bãi cát trải dài" 
+           src="https://picsum.photos/id/1015/600/400" 
+           onmouseover="upDate(this)" onmouseleave="unDo()" 
+           onfocus="upDate(this)" onblur="unDo()">
+
+      <img class="preview" alt="Dãy núi đá hùng vĩ lúc hoàng hôn" 
+           src="https://picsum.photos/id/1016/600/400" 
+           onmouseover="upDate(this)" onmouseleave="unDo()" 
+           onfocus="upDate(this)" onblur="unDo()">
+
+      <img class="preview" alt="Rừng thông mộng mơ phủ tuyết trắng" 
+           src="https://picsum.photos/id/1025/600/400" 
+           onmouseover="upDate(this)" onmouseleave="unDo()" 
+           onfocus="upDate(this)" onblur="unDo()">
+
+      <img class="preview" alt="Con đường mòn trải lá vàng mùa thu" 
+           src="https://picsum.photos/id/1039/600/400" 
+           onmouseover="upDate(this)" onmouseleave="unDo()" 
+           onfocus="upDate(this)" onblur="unDo()">
+
+      <img class="preview" alt="Mặt hồ phẳng lặng phản chiếu bầu trời xanh" 
+           src="https://picsum.photos/id/1043/600/400" 
+           onmouseover="upDate(this)" onmouseleave="unDo()" 
+           onfocus="upDate(this)" onblur="unDo()">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

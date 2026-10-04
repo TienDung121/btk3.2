@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background-color: #f8f9fa;
+  color: #333333;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#image {
+  line-height: 400px;
+  height: 400px;
+  width: 600px;
+  max-width: 90%;
+  margin: 0 auto 25px auto;
+  border: 4px solid #222;
+  background-color: #5c6bc0;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.preview {
+  width: 140px;
+  height: 95px;
+  object-fit: cover;
+  border: 3px solid #bbb;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+/* Hiệu ứng khi rê chuột hoặc dùng phím Tab di chuyển vào ảnh */
+.preview:hover,
+.preview:focus {
+  transform: scale(1.08);
+  border-color: #0056b3;
+  outline: 3px solid #ff9800; /* Viền nổi bật hỗ trợ khả năng tiếp cận */
+}
